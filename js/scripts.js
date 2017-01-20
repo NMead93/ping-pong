@@ -11,7 +11,12 @@ function pingPong (endNum) {
     var output = "1";
 
     for (i = 2; i <= endNum; i++) {
-        output += ", " + i;
+        output += ", "
+        if (i % 3 === 0) {
+            output += "ping"
+        } else {
+            output += i;
+        }
     }
 
     return output;
