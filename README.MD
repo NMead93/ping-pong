@@ -24,11 +24,14 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
     * _Input: 3_
     * _Output: 1, 2, 3_
 * _It can recognize multiples of 3 and replace with ping_
-    * _Input: 1-20_
+    * _Input: 20_
     * _Output: 1, 2, ping, 4, 5, ping, 7, 8, etc...._
 * _It can recognize multiples of 5 that are not multiples of 3 and replace with pong_
-    * _Input: 1-20_
+    * _Input: 20_
     * _Output: 1, 2, ping, 4, pong, ping, etc...._
+* _It can recognize multiples of 3, 5, as well as numbers that are multiples of both and replace with ping-pong_
+    * _Input: 21_
+    * _Output: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong etc..._
 
 ## Known Bugs
 
