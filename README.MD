@@ -26,6 +26,9 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 * _It can recognize multiples of 3 and replace with ping_
     * _Input: 1-20_
     * _Output: 1, 2, ping, 4, 5, ping, 7, 8, etc...._
+* _It can recognize multiples of 5 that are not multiples of 3 and replace with pong_
+    * _Input: 1-20_
+    * _Output: 1, 2, ping, 4, pong, ping, etc...._
 
 ## Known Bugs
 

@@ -14,6 +14,8 @@ function pingPong (endNum) {
         output += ", "
         if (i % 3 === 0) {
             output += "ping"
+        } else if (i % 5 === 0) {
+            output += 'pong';
         } else {
             output += i;
         }
