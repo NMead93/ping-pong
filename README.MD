@@ -21,6 +21,7 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ## Specs
 
 * _It can count up to the given number_
+    * _Input: 3_
 
 
 ## Known Bugs
