@@ -1,19 +1,15 @@
-$(function () {
-    $('.input').submit(function (event) {
-        event.preventDefault()
-        var inputNum = parseInt($('.input input').val());
+function Calculator(skinName){
+  this.skin = skinName;
+}
 
-        $('.output').text(pingPong(inputNum));
-    })
-})
 
-function pingPong (endNum) {
+Calculator.prototype.pingPong = function(endNum) {
     var output = "1";
 
     for (i = 2; i <= endNum; i++) {
-        output += ", "
+        output += ", ";
         if (i % 3 === 0 && i % 5 !== 0) {
-            output += "ping"
+            output += "ping";
         } else if (i % 3 !== 0 && i % 5 === 0) {
             output += 'pong';
         } else if (i % 3 === 0 && i % 5 === 0) {
@@ -24,4 +20,6 @@ function pingPong (endNum) {
     }
 
     return output;
-}
+};
+
+exports.nickCalculator = Calculator;
